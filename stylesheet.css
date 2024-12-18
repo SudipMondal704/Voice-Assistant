@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+
+}
+#logo{
+    width: 20vw;
+    
+}
+h1{
+    color: aliceblue;
+    font-family: "Doto", sans-serif;
+
+
+}
+#name{
+    color: rgb(22, 231, 231);
+    font-size: 40px;
+}
+#va{
+    color: rgb(244, 248, 8);
+    font-size: 38px;
+}
+#voice{
+    width: 200px;
+    display: none;
+}
+#btn{
+    width: 30%;
+    background: linear-gradient(to right,rgb(4, 194, 153),rgb(120, 216, 10));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(4, 194, 153),  2px 2px 10px rgb(120, 216, 10);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 2px 2px 20px rgb(4, 194, 153),  2px 2px 20px rgb(120, 216, 10); 
+    letter-spacing: 1.9px;
+}
+
+@media(max-width: 480px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo {
+        width: 60vw; /* Scaled for smaller screens */
+    }
+
+    h1 {
+       /*  font-size: 24px; Adjusted for readability */
+        text-align: center;
+    }
+
+    #name, #va {
+        font-size: 28px; /* Reduced size for smaller screens */
+        text-align: center;
+    }
+
+    #btn {
+        width: 80%; /* Larger button width */
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 20px;
+        gap: 5px;
+    }
+}
+

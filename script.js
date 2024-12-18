@@ -95,6 +95,9 @@ function takeCommand(message) {
     else if (normalizedMessage.includes("thank you") || normalizedMessage.includes("thank you for your information")) {
         speak("welcome sir, enjoy your day....");
     } 
+    else if (normalizedMessage.includes("whats your name") || normalizedMessage.includes(" tell me your name")) {
+        speak("i,m siri,your virtual assistant....");
+    } 
     else if (normalizedMessage.includes("i love her") ||normalizedMessage.includes("i love you")) {
         speak("I'm also love my creator Sudip sir.... not you");
     } 
